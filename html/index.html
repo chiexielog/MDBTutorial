@@ -20,6 +20,18 @@
 <!-- MDB -->
 <link
   href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.css"rel="stylesheet"/>
+  <!-- Always get the latest version -->
+<!-- Not recommended for production sites! -->
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+
+<!-- Get minor updates and patch fixes within a major version -->
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15/dist/smooth-scroll.polyfills.min.js"></script>
+
+<!-- Get patch fixes within a minor version -->
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0/dist/smooth-scroll.polyfills.min.js"></script>
+
+<!-- Get a specific version -->
+<script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
 </head>
 <body>
   <header>
@@ -125,9 +137,50 @@
   </div>
   <div class="d-grid gap-1">
 
-    <div class="p-lg-5 bg-light"></div>
+    <div class="p-lg-5"></div>
     </div>
-  
+  <div class="d-grid gap-5">
+
+    <div class="p-lg-5 bg-transparent w-25 text-danger"><h1 class="about">About Us</h1> <img
+      src="https://mdbcdn.b-cdn.net/img/new/standard/city/047.webp"
+      class="img-fluid rounded-circle"alt="Townhouses and Skyscrapers"/>
+      
+     
+    </div>
+    </div>
+
+    <div class="row">
+      <div class="col align-self-start">
+        
+        <div class="card bg-secondary">
+          <div class="card-body">
+            <h5 class="card-title text-dark">Card title</h5>
+          
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus similique ut culpa dolores placeat! Explicabo, consequatur deserunt fugit dolore hic dignissimos porro, expedita iure sapiente laborum praesentium. Perferendis, rem enim?</p>
+            <button type="button" class="btn btn-primary">Button</button>
+          </div>
+        </div>
+
+      </div>
+      <div class="col align-self-center">
+        <div class="card bg-success">
+          <div class="card-body">
+            <h5 class="card-title text-dark">Card title</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit repellendus animi iste impedit, ea nisi aut possimus, numquam temporibus nulla doloribus, molestias beatae cum vitae ab. Expedita accusamus dolores beatae.sample text sample text</p>
+            <button type="button" class="btn btn-primary">Button</button>
+          </div>
+        </div>
+      </div>
+      <div class="col align-self-end">
+        <div class="card bg-info">
+          <div class="card-body">
+            <h5 class="card-title text-dark">Card title</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia consectetur possimus obcaecati modi saepe, et consequuntur earum voluptas dicta dolores voluptatem, beatae aperiam nulla esse, repudiandae cumque quidem debitis maiores.</p>
+            <button type="button" class="btn btn-primary">Button</button>
+          </div>
+        </div>
+      </div>
+    </div>
    
 <!-- Footer -->
 <footer class="text-center text-lg-start bg-dark text-muted">
@@ -263,7 +316,9 @@
 <!-- MDB -->
 <script
   type="text/javascript"
-  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.js"
-></script>
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.1.0/mdb.min.js"></script>
+<script>
+	var scroll = new SmoothScroll('a[href*="#"]');
+</script>
 </body>
 </html>
